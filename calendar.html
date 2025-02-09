@@ -38,11 +38,9 @@
     </style>
     <script>
         const UserAction = async () => {
-            const response = await fetch('https://data.360wellnesseducation.com/api:ySZ3TE17/event/class?school_id_param=0&new_timezone_param=0&state_param=all&page_num_param=0&course_id_param=0&calendar_type=aep');
+            const response = await fetch('https://data.360wellnesseducation.com/api:ySZ3TE17/event/class?school_id_param=-16&new_timezone_param=0&state_param=all&page_num_param=0&course_id_param=0&calendar_type=aep');
 
             const myJson = await response.json();
-            console.log(myJson);
-            console.log(myJson.array);
             let base_class_obj = document.getElementById("w-node-c591544d-d5d8-d386-21a2-992b894b25ad-24ebf70a");
 
 
